@@ -1,0 +1,124 @@
+html {
+  font-family: "Edu VIC WA NT Beginner", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root{
+  --accent-color: rgb(253, 253, 157);
+  --base-color: white;
+  --text-color: black ;
+  --input-color: #ffd3b1;
+  --focus-color: rgba(255, 0, 0, 0.088);
+  --mark-color: rgba(113, 140, 250, 0.19);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container .box .content h1 {
+  font-size: 100px;
+  color: black;
+}
+
+.container {
+  background-image: url(/IMAGE/anime-moon-landscape.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container .box .register-form {
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: antiquewhite;
+  width: 400px;
+  padding: 30px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 10px;
+}
+
+.container .box .register-form .input-box input{
+  box-sizing: border-box;
+  flex-grow: 1;
+  min-width: 0;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--input-color);
+  transition: 150ms ease;
+  padding: 5px;
+}
+
+.container .box .register-form .input-box input:hover{
+  border: 1px solid var(--accent-color);
+}
+
+.container .box .register-form .input-box input:focus{
+  border: 1px solid var(--text-color);
+}
+
+.container .box .register-form .input-box:has(input:focus) label{
+  background-color: var(--focus-color);
+}
+
+.register-form button{
+  margin-top: 10px;
+  border: none;
+  border-radius: 1000px;
+  padding: 2px 10px;
+  background-color: var(--accent-color);
+  color: var(--text-color);
+  font: inherit;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.register-form button{
+  margin-top: 10px;
+  border: none;
+  border-radius: 1000px;
+  padding: 2px 10px;
+  background-color: var(--accent-color);
+  color: var(--text-color);
+  font: inherit;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.register-form button:hover{
+  background-color: var(--mark-color);
+}
+
+.register-form button:focus  {
+  background-color: var(--focus-color);
+}
+
+a {
+  text-decoration: none;
+  color: orange;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container .box .register-form .input-box label{
+  flex-shrink: 0;
+  height: 35px;
+  width: 35px;
+  background-color: var(--accent-color);
+  fill: var(--base-color);
+  color: var(--text-color);
+  align-items: center;
+  padding: 8px;
+  border-radius: 10px;
+}
