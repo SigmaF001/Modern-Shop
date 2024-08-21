@@ -1,8 +1,10 @@
 html {
-  font-family: "Edu VIC WA NT Beginner", cursive;
+  font-family: "Kalnia Glaze", serif;
   font-optical-sizing: auto;
-  font-weight: 700;
+  font-weight: 600;
   font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
 }
 
 :root{
@@ -22,7 +24,7 @@ html {
 
 .container .box .content h1 {
   font-size: 100px;
-  color: black;
+  color: white;
 }
 
 .container {

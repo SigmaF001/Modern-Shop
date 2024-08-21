@@ -1,8 +1,10 @@
 html {
-  font-family: "Edu VIC WA NT Beginner", cursive;
+  font-family: "Kalnia Glaze", serif;
   font-optical-sizing: auto;
-  font-weight: 700;
+  font-weight: 600;
   font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
 }
 
 :root{
@@ -40,7 +42,6 @@ html {
   line-height: 35px;
   border-radius: 10px;
 }
-
 
 .container .box .login-form .input-box{
   flex-direction: column;
@@ -116,7 +117,7 @@ a:hover {
 
 .container .box .content h1 {
   font-size: 100px;
-  color: black;
+  color: white;
 }
 
 .container .box .content a {
