@@ -12,23 +12,158 @@ html {
     min-height: 100vh;
   }
 
-.container {
+  :root{
+    --accent-color: rgb(253, 253, 157);
+    --base-color: white;
+    --text-color: black ;
+    --input-color: #ffd3b1;
+    --focus-color: rgba(255, 0, 0, 0.088);
+    --mark-color: rgba(113, 140, 250, 0.19);
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: antiquewhite;
+    color: black;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header nav {
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: antiquewhite;
+    width: 400px;
+    padding: 10px;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 10px;
+}
+
+.menu-button{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.menu{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    max-width: 200px;
+}
+
+.account{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    max-width: 200px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
     justify-content: center;
+    gap: 20px;
 }
 
-a {
-    color: aliceblue;
+header nav ul li a {
     text-decoration: none;
+    color: orange;
 }
 
-.box {
-    border: 1px solid red;
-    box-sizing: border-box;
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.product-list {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
 }
 
 .product {
-    border: 1px solid black;
-    color: aliceblue;
-    max-width: 500px;
     text-align: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+    background-color: #f9f9f9;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10%;
+}
+
+.product button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.product button:hover {
+    background-color: #555;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }

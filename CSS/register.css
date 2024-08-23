@@ -37,7 +37,7 @@ html {
 }
 
 .container .box .register-form {
-  margin-top: 100px;
+  margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
   background-color: antiquewhite;
@@ -111,6 +111,14 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+#error-message{
+  color: red;
+}
+
+#success-message{
+  color: green;
 }
 
 .container .box .register-form .input-box label{

@@ -7,29 +7,49 @@
     <link rel="stylesheet" href="/CSS/shop.css">
 </head>
 <body>
-    <nav class="button">
-        <a href="index.html">Home Page</a>
-    </nav>
-    <div class="container">
-        <div class="box">
-            <div class="content">
-                <nav class="product">
-                    <h3>Product 1</h3>
-                </nav>
-                <nav class="product">
-                    <h3>Product 2</h3>
-                </nav>
-                <nav class="product">
-                    <h3>Product 3</h3>
-                </nav>
-                <nav class="product">
-                    <h3>Product 4</h3>
-                </nav>
-                <nav class="product">
-                    <h3>Product 5</h3>
-                </nav>
+    <header>
+        <h1>Krajip Shop</h1>
+        <div class="menu-button">
+            <nav class="menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <nav class="account">
+                <ul>
+                    <li><a href="UserAccount.html">Account</a></li>
+                    <li><a href="Cart.html">Cart</a></li>
+                    <li><a href="index.html">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home">
+        <h2>Featured Products</h2>
+        <div class="product-list">
+            <div class="product">
+                <img src="/IMAGE/Beta_Key_Art.png" alt="Valorant">
+                <h3>Valorant</h3>
+                <button>View more</button>
+            </div>
+            <div class="product">
+                <img src="/IMAGE/minecraft-main.jpg" alt="Minecraft">
+                <h3>Minecraft</h3>
+                <button>View more</button>
+            </div>
+            <div class="product">
+                <img src="/IMAGE/roblox-main.jpg" alt="Roblox">
+                <h3>Roblox</h3>
+                <button>View more</button>
             </div>
         </div>
-    </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 My Shop. All rights reserved.</p>
+    </footer>
 </body>
 </html>

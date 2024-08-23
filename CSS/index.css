@@ -31,6 +31,11 @@ html {
   min-height: 100vh;
 }
 
+.logo{
+  width: 100px;
+  height: 100px;
+}
+
 .container .box .login-form {
   margin-top: 100px;
   margin-left: auto;
@@ -128,3 +133,20 @@ a:hover {
   border-radius: 5px;
 }
 
+#error-message{
+  color: red;
+}
+
+#success-message{
+  color: green;
+}
+
+@media (max-width: 768px){
+  .container{
+    width: min(600px, 100%);
+  }
+
+  .container .box .login-form{
+    width: min(300px, 100%);
+  }
+}
