@@ -8,6 +8,9 @@ const email = document.getElementById("email")
 const phone = document.getElementById("phone")
 const error_message = document.getElementById("error-message")
 const success_message = document.getElementById("success-message")
+
+var login = false
+
 form.addEventListener('submit', (e) => {
 
 let errors = []
@@ -26,7 +29,8 @@ if (errors.length > 0) {
           error_message.innerHTML = errors.join('. ')
 }
 if (errors.length == 0) {
-          success_message.innerHTML = 'Register successful.'
+          error_message.innerHTML = ''
+          login = true
 }
 })
 
@@ -54,11 +58,15 @@ function getSignupformErrors(firstname, lastname, username, password, confirm_pa
           if (password != confirm_password) {
                     errors.push('Passwords do not match')
           }
+          if (errors.length == 0) {
+            success_message.innerHTML = 'Register successful.'
+            alert('Register successful.')
+  }
 
           return errors
 }
 
-const allInputs = [firstname, lastname, username, password, email, phone, confirm_password]
+const allInputs = [firstname, lastname, username, password, confirm_password, email, phone]
 
 allInputs.foreach(input =>{
           input.addEventListener('input', () => {
@@ -75,6 +83,9 @@ function getLoginformErrors(username, password) {
           if (password === '') {
                     errors.push('Password is required')
           }
+          else{
+            success_message.innerHTML = 'Login successful.'
+  }
 
           return errors
 }
